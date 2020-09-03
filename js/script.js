@@ -1,5 +1,6 @@
 $(document).ready(function(){
-alert("funziono");
+
+// FUNZIONE HOVER E OPEN  DELLE VARIE PARTI DELLA NAV BAR
 
 
 

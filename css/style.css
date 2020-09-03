@@ -4,3 +4,65 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+.style-none{
+  list-style: none;
+  text-decoration: none;
+}
+.bold{
+  font-weight: bold;
+}
+.show{
+  display:block;
+}
+.hide{
+  display: none;
+}
+
+.window{
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* MIX */
+.container{
+  width: 1128px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-color: lightblue;
+  color:grey;
+}
+.nav-bar{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 1128px;
+  background-color: white;
+  color: inherit;
+}
+/* LOGO */
+.logo{
+  height: 120px;
+  position: relative;
+  bottom: 15px;
+}
+
+.list-nav-pb li, .list-nav-info li{
+  display: inline-block;
+  padding: 40px 10px;
+}
+
+.btn{
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 25px;
+  padding: 14px 34px;
+}
+
+/* BOTTONE */
