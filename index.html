@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Revolt</title>
+    <title>Revolut</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -10,106 +10,83 @@
   </head>
 
   <body>
-    <!-- LINK UP -->
-    <div class="container">
 
-      <!-- LINK NAV BAR -->
-      <div class="nav-bar">
+    <header class="main-header">
+      <div class="container">
         <!-- LOGO -->
-        <div class="logo-box">
-          <img class="logo" src="img/Revolut.png" alt="revolut">
+        <div class="logo">
+          <img src="img/Revolut.png" id="logo-img" alt="Logo">
         </div>
-        <!-- //LOGO -->
+        <!--// LOGO -->
 
-        <!-- NAV PERSONAL & BUSINNESS -->
-        <div class="nav-pb">
-          <ul class="list-nav-pb style-none bold">
-            <li><a href="#"></a><h4>Personal</h4></li>
-            <li><a href="#"></a><h4>Businness</h4></li>
+        <!-- BTN PERSONALE BUSINNESS -->
+        <div class="cat-select">
+          <ul class="cat-select-list">
+            <li class="cat-select-list-item active"><a href="#">Personal</a></li>
+            <li class="cat-select-list-item"><a href="#">Business</a></li>
           </ul>
         </div>
-        <!-- //PERSONAL & BUSINNESS -->
+        <!--// BTN PERSONALE BUSINNESS -->
 
-        <!-- LINK INFO -->
-        <div class="nav-info">
-          <ul class="list-nav-info style-none bold">
-            <!-- denaro -->
-            <li>
-              <h4>Denaro</h4>
-              <div class="denaro">
-                <ul class="hide">
-                  <li>Invia denaro all'estero</li>
-                  <li>Effettua e ricevi pagamenti</li>
-                  <li>Paga con ApplePay</li>
-                  <li>Paga con GPay</li>
-                </ul>
-              </div>
+        <!-- MENU DI NAVIGAZIONE SERVIZI -->
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-list-item">
+              <a href="#">Denaro</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item"><a href="#">Invia denaro all'estero</a></li>
+                <li class="dropdown-list-item"><a href="">Effettua e ricevi pagamenti</a></li>
+                <li class="dropdown-list-item"><a href="">Paga con Apple Pay</a></li>
+                <li class="dropdown-list-item"><a href="">Paga con GPay</a></li>
+              </ul>
             </li>
-            <!-- investimenti -->
-            <li>
-              <h4>Investimenti e risparmi</h4>
-              <div class="invest-risp">
-                <ul class="hide">
-                  <li>Effettua compravendita di titoli azionari</li>
-                  <li>Effettua compravendita di prodotti</li>
-                  <li>Effettua compravendita Crypto</li>
-                  <li>Imposta i Salvadanai</li>
-                </ul>
-              </div>
+            <li class="main-nav-list-item">
+              <a href="#">Investimenti e risparmi</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item"><a href="#">Effettua compravendite di titoli azionari</a></li>
+                <li class="dropdown-list-item"><a href="#">Effettua compravendite di prodotti</a></li>
+                <li class="dropdown-list-item"><a href="#">Effettua compravendite Crypto</a></li>
+                <li class="dropdown-list-item"><a href="#">Imposta i Salvadanai</a></li>
+              </ul>
             </li>
-            <!-- controllo -->
-            <li>
-              <h4>Controllo</h4>
-              <div class="controllo">
-                <ul class="hide">
-                  <li>Imposta i Budget</li>
-                  <li>Tutelati</li>
-                </ul>
-              </div>
+            <li class="main-nav-list-item">
+              <a href="#">Controllo</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item"><a href="#">Imposta i budget</a></li>
+                <li class="dropdown-list-item"><a href="#">Tutelati</a></li>
+              </ul>
             </li>
-            <!-- altro -->
-            <li>
-              <h4>Altro</h4>
-              <div class="altro">
-                <ul class="hide">
-                  <li>Assicura te stesso all'estero</li>
-                  <li>Assicura il tuo dispositivo</li>
-                  <li>Dona agli enti di beneficenza</li>
-                  <li>PROSSIMAMENTE</li>
-                  <li>Scopri i Rewards</li>
-                </ul>
-              </div>
+            <li class="main-nav-list-item">
+              <a href="#">Altro</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item"><a href="#">Assicura te stesso all'estero</a></li>
+                <li class="dropdown-list-item"><a href="#">Assicura il tuo dispositivo</a></li>
+                <li class="dropdown-list-item"><a href="#">Dona agli enti di beneficenza</a></li>
+              </ul>
             </li>
-            <!-- abbonamenti -->
-            <li>
-              <h4>Abonamenti</h4>
-              <div class="abbonamenti">
-                <ul class="hide">
-                  <li>Standard</li>
-                  <li>Premium</li>
-                  <li>Metal</li>
-                  <li>Junior - nuovo -</li>
-                  <li>Tariffazione</li>
-                </ul>
-              </div>
+            <li class="main-nav-list-item">
+              <a href="#">Abbonamenti</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item"><a href="#">Standard</a></li>
+                <li class="dropdown-list-item"><a href="#">Premium</a></li>
+                <li class="dropdown-list-item"><a href="#">Metal</a></li>
+                <li class="dropdown-list-item"><a href="#">Junior</a></li>
+                <li class="dropdown-list-item"><a href="#">Tariffazione</a></li>
+              </ul>
             </li>
           </ul>
-        </div>
-        <!-- //LINK INFO -->
+        </nav>
+        <!--// MENU DI NAVIGAZIONE SERVIZI -->
 
-        <!-- SCARICA APP -->
-        <div class="btm-app">
-          <button  class=" btn bold" type="button" name="button">Scarica l'app</button>
+        <!-- BTN SCARICA APP -->
+        <div class="down-app">
+          <a class="btn-down-app" href="#">Scarica l'app.</a>
         </div>
-        <!-- //SCARICA APP -->
-
+        <!--// BTN SCARICA APP -->
       </div>
-      <!-- //LINK BAR -->
+    </header>
 
-    </div>
-    <!--// LINK UP -->
-
-    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

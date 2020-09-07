@@ -1,68 +1,91 @@
-*{
+* {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: 'Roboto', sans-serif;
 }
-.style-none{
-  list-style: none;
+a {
   text-decoration: none;
 }
-.bold{
-  font-weight: bold;
-}
-.show{
-  display:block;
-}
-.hide{
-  display: none;
-}
-
-.window{
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-
-/* MIX */
-.container{
-  width: 1128px;
-  height: 100vh;
-  margin: auto;
-  text-align: center;
-  background-color: lightblue;
-  color:grey;
-}
-.nav-bar{
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  height: 100px;
-  width: 1128px;
-  background-color: white;
-  color: inherit;
-}
-/* LOGO */
-.logo{
-  height: 120px;
-  position: relative;
-  bottom: 15px;
-}
-
-.list-nav-pb li, .list-nav-info li{
-  display: inline-block;
-  padding: 40px 10px;
-}
-
-.btn{
-  background-color: orange;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 20px;
+ul li {
   cursor: pointer;
-  position: relative;
-  top: 25px;
-  padding: 14px 34px;
 }
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+/*// MIX */
+
+header.main-header {
+  height: 80px;
+  line-height: 80px;
+}
+.logo #logo-img {
+  margin: 0 30px 5px 0;
+  width: 120px;
+  vertical-align: middle;
+}
+
+/* RAGGRUPPAMENTO OPZIONI LISTE */
+.cat-select .cat-select-list {
+  text-transform: uppercase;
+}
+.cat-select-list,
+.main-nav-list,
+.main-nav-list .dropdown-list {
+  list-style: none;
+}
+.cat-select-list,
+.main-nav-list {
+  display: flex;
+}
+nav.main-nav {
+  margin-left: auto;
+}
+.cat-select-list-item:not(:last-child),
+.main-nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+/* RAGGRUPPAMENTO OPZIONI LISTE */
 
 /* BOTTONE */
+a.btn-down-app {
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #EB008D;
+  border-radius: 20px;
+}
+.down-app a.btn-down-app {
+  margin-left: 30px;
+}
+/* BOTTONE */
+
+/* NAV LIST ITEM */
+nav.main-nav .main-nav-list li {
+  position: relative;
+}
+.cat-select-list li,
+.main-nav-list li {
+  color: #888;
+  background-color: inherit;
+}
+.cat-select-list li:hover,
+.main-nav-list li:hover {
+  color: #111;
+  background-color: inherit;
+}
+.dropdown-list {
+  display: none;
+  white-space: nowrap;
+  position: absolute;
+  padding: 10px 15px;
+  line-height: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
